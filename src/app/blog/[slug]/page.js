@@ -3,7 +3,7 @@ import Card from '@/components/card/Card'
 
 const getSinglePost = async (slug) => {
   try {
-    const post = await fetch(`${process.env.BASE_URL}/api/blog/${slug}`)
+    const post = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/blog/${slug}`)
     if(!post) throw new Error("No post found")
     return post.json()
   } catch (error) {
