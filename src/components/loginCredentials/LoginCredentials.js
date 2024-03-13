@@ -20,7 +20,7 @@ const LoginCredentials = ({loginWC}) => {
           <Button className='btn-form' text="Submit" type="submit" /> 
         </form>
         {state?.error && <span>{state.error}</span>}
-        <p>Don't have an account? <b><Link href='/register'>Register here</Link></b> please</p>
+        <p>Do not have an account? <b><Link href='/register'>Register here</Link></b> please</p>
       </div>
   )
 }
