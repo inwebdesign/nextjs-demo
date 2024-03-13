@@ -8,6 +8,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --layout-color: #fff;
+  --nav-bckg: teal;
+  --foot-bckg: rgb(226, 133, 27);
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -38,7 +41,17 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  /*
+    buttons color
+  */
+
+  --btn-navigation: rgb(3, 49, 49);
+  --btn-action: #d43131;
+
+
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -73,6 +86,7 @@
   }
 }
 
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -87,17 +101,53 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+  /*
+    buttons variants
+  */
+
+  .btn-nav {
+    padding: 10px;
+    color: var(--layout-color);
+    margin: 5px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    background: var(--btn-navigation);
+    cursor: pointer;
+    width: auto;
+}
+
+.btn-cta {
+  padding: 10px;
+  color: var(--btn-navigation);
+  margin: 5px;
+  text-align: center;
+  border-radius: var(--border-radius);
+  background: transparent;
+  border: 1px solid var(--btn-navigation);
+  cursor: pointer;
+  width: auto;
+}
+.btn-form {
+  padding: 10px;
+  color: var(--layout-color);
+  text-align: center;
+  border-radius: var(--border-radius);
+  background: var(--btn-navigation);
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.btn-light {
+  color: var(--layout-color);
+  border: 1px solid var(--layout-color);
 }
 
 @media (prefers-color-scheme: dark) {

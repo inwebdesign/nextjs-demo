@@ -1,0 +1,94 @@
+
+.adminPanel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-top: 2rem;
+}
+
+
+/* Stilizacija wrappera forme */
+.formWrapper {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+/* Stilizacija naslova forme */
+.formWrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Stilizacija grupa forme */
+.formGroup {
+  margin-bottom: 15px;
+}
+
+/* Stilizacija labela */
+.formGroup label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Stilizacija input polja */
+.formGroup input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+
+/* Fokus stilizacija */
+.formGroup input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+/* Stilizacija select polja */
+.formGroup select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Fokus stilizacija za select polje */
+.formGroup select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-cta:focus {
+  outline: none;
+}
+
+
+.postList li {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10px;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border: 1px solid var(--btn-navigation);
+}
+
+.postList form {
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .formWrapper {
+    width: 100%;
+  }
+}
