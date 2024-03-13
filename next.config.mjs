@@ -7,7 +7,8 @@ const nextConfig = {
         hostname: 'media.istockphoto.com'
       }
     ]
-  }
+  },
+  staticPageGenerationTimeout: 200
 };
 
 export default nextConfig;
