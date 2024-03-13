@@ -12,7 +12,7 @@ const RegistrationForm = ({text, registerUser}) => {
 
   useEffect(() => {
     state?.success && router.push('/login')
-  }, [state?.success])
+  }, [state?.success, router])
 
   return (
     <div className={styles.formGroup}>
