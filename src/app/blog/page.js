@@ -11,7 +11,6 @@ const getPosts = async () => {
   }
 }
 
-
 const Blog = async () => {
 
 // const posts = await getPosts()
