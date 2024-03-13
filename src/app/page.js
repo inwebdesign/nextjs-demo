@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 
 export const dynamic = 'force-dynamic';
+export const runtime = "edge"
 
 export default function Home() {
   return (
