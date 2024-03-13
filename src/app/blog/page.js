@@ -3,7 +3,8 @@ import styles from './Blog.module.css'
 
 const getPosts = async () => {
   try {
-    const posts = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/blog`)
+    const url = 'http://127.0.0.1:3000'
+    const posts = await fetch(`${process.env.NEXT_PUBLIC_API_URL || url}/api/blog`)
     if(!posts) throw new Error('No posts found')
     return posts.json()
   } catch (error) {
